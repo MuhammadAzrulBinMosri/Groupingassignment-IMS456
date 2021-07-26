@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(jugrahill1.JPG);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.About{
+    width: 100%;
+    position: sticky;
+    text-align: center;
+}
+.About h2{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: white;
+}
+ .holdingcontainer img{
+    height: 200px;
+    width: 300px;
+    text-align: center;
+ }
+ .holdingcontainer h1{
+    text-align: justify;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black;
+ }
+ .holdingcontainer p{
+    text-align: justify;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+ }
+ .holdingcontainer{
+      max-width: 100%;
+      display: flex;
+      padding: 50px;
+      box-sizing: border-box;
+      flex-direction: row;
+    }
+
+    .internalcontainerL{
+      flex: 1;
+      background: #8F8685;
+      padding: 30px;
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      margin: 3px;
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    .internalcontainerM{
+      flex: 1;
+      background: #4F4949;
+      padding: 30px;
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      margin: 3px;
+    }
+
+    .internalcontainerR{
+      flex: 1;
+      background: #352828;
+      padding: 30px;
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      margin: 3px;
+    }
+
+    @media screen and (max-width: 768px){
+      .holdingcontainer{
+        flex-direction: column-reverse;
+      }
+    }
+    .btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid #A2D9CE;
+
+}
+.btn:hover{
+    background-color: #A2D9CE;
+}
+#footer{
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #49494e;
+    color: white;
+    font-size: 12pt;
+    text-align: center;
+    position: relative;
+    clear: both;
+}

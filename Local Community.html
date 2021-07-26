@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukit Jugra, Selangor</title>
+    <link rel="icon" href="logo1.jpeg" type="image/gif" size="16x16">
+    <link rel="stylesheet" href="Local Community.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['RACES', 'Population',],
+        ['MELAYU', 7234],
+        ['INDIA', 3517],
+        ['CINA', 2096],
+      ]);
+
+      var options = {
+        title: 'Estimated Population in Mukim Jugra',
+        chartArea: {width: '50%'},
+        hAxis: {
+          title: 'Percentage (100%)',
+          minValue: 0
+        },
+        vAxis: {
+          title: 'RACES'
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+    </script>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="index.html"><img src="logo1.jpeg" class="logo"></a>
+            <ul>
+                <li><a href="WEBMASTER.html">ABOUT US</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li><a href="Activities.html">ACTIVITIES</a></li>
+                <li><a href="History.html">HISTORY</a></li>
+                <li><a href="Attraction.html">ATTRACTION</a></li>
+                <li><a href="Local Community.html">LOCAL COMMUNITY</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+            </ul>
+            
+        </div>
+     <div class="About">
+            <h1 id="LOCAL COMMUNITY">LOCAL COMMUNITY</h1>
+            </div>
+
+            <div class="box">
+            <img src="mukim.png">
+            <p>Pictures of Mukim in Selangor</p>
+            <img src="BANDAR_DAN_JUGRA.jpg">
+            <p>Pictures of Mukim Jugra and Bandar</p>
+            </div>
+
+            <div id="layout">
+        <div id="history">
+            <div class="content-history">
+                <h2>MUKIM JUGRA</h2>
+                <p>The image above is a map of Mukim Jugra and Mukim Bandar. Here, we focus on Mukim Jugra. Local community plays an important role for every area in a place. Like Jugra district, it is one of the districts in Selangor. In Jugra, there are 3 villages namely Kampung Melayu Pulau Carey, Permatang Pasir and Kampung Seri Jugra. All three villages have a total population of different population with different types of races such as Malay, Chinese, and Indian. For your information, the estimated total population in Jugra sub -district is 10000 people.</p>
+            </div>
+       </div>
+    </div>
+
+    <div class="population">
+            <h1>POPULATION IN MUKIM JUGRA</h1>
+        </div>
+    <div id="chart_div" class="chart"></div>
+
+    <div class="village">
+            <h1>VILLAGE IN MUKIM JUGRA</h1>
+        </div>
+
+    <div id="layout">
+        <div id="content">
+            <div class="thecontent">
+                <img src="kampungpulaucarey.jpg" class="image">
+                <h2>1. KAMPUNG MELAYU PULAU CAREY</h2>
+                
+                For residents of Kampung Melayu Pulau Carey, the population there is in the neighborhood of 300 people, including men, women, elderly and children. For many people, the village is dominated by the Malays only. For active activities done in this area are agricultural activities where in this village there is an agricultural industry such as oil palm plantations. The productive life of an oil palm plantation is about 30 years which gives birds and mammals stability for a much longer period than for other crops.<br>
+            </div>
+            <div class="thecontent">
+                <img src="kampungpermatangpasir.jpg" class="image">
+                <h2>2. KAMPUNG PERMATANG PASIR</h2>
+                
+                For the residents of Kampung Permatang Pasir, the total population there is around 3,500 people including men, women, senior citizens and children. Also, the number of female population is more than male in this village. For many people, the village is dominated by the Malays 2,500 people, in addition to the chinese and indian, each having 460 and 420 people there. For activities that are actively done there are agricultural activities. Apart from that activity, there are also sports activities that are actively done there, namely cycling and jogging.<br>
+            </div>
+            <div class="thecontent">
+                <img src="kampungserijugra.png" class="image">
+                <h2>3. KAMPUNG SERI JUGRA</h2>
+                
+                For the residents of Kampung Seri Jugra, the total population there is in the range of 5,000 people including men, women, the elderly and children. In this village, the male population is more than the female population when compared to Kampung Permatang Pasir which has a larger female population. For many people, the village is dominated by the Malays of 3,000 people, in addition, many Indians almost in the range of 1,300 and also the Chinese only 720 people total. For active activities done in this area is more in terms of education, where this area has active schools and institutions and has many students there such as Banting Science School, Kuala Langat Community College, and also Jugra National High School.<br>
+            </div>
+            <a href="#LOCAL COMMUNITY"><button class="btn">Back to Top</button></a>
+        </div>
+    </div>
+
+
+
+</div>
+        <div id="footer">&copy 2021, by Group 5 IMS456</div>
+    </div>
+ </div>
+
+
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
